@@ -1,0 +1,3 @@
+INSERT INTO users (id, username, email, firstname, lastname, password)
+VALUES (nextval('users_id_seq'), 'saveniukk', 'saveniukf@gmail.com', 'Myroslava','Saveniuk', 'password007')
+RETURNING id, username, email, firstname, lastname, password;
